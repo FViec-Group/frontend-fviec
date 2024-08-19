@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import React from 'react';
 import { fonts } from './font';
 
-import './styles/global.scss';
+import '@/styles/global.scss';
 
 type Props = {
   children: React.ReactNode;
