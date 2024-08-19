@@ -7,6 +7,9 @@ const buildEslintCommand = (filenames) =>
 
 const buildPrettierCommand = (filenames) => `prettier --write ${filenames.join(' ')}`;
 
+const auditCommand = () => `npm audit`;
+
 module.exports = {
   '*.{js,jsx,ts,tsx, md, mdx}': [buildEslintCommand, buildPrettierCommand],
+  '*': [auditCommand],
 };
