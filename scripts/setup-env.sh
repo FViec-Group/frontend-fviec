@@ -8,7 +8,7 @@ if [ -f "$ROOT_DIR/.env.local" ]; then
   echo -e ">> ${RED}.env.local already exists. << ${NC}"
 else
   cat <<EOL > "$ROOT_DIR/.env.local"
-ANALYZE=true
+ANALYZE=false
 EOL
 
   if [ -f "$ROOT_DIR/.env.local" ]; then
