@@ -1,0 +1,9 @@
+{
+  "common": {},
+  "pages": {
+    "Home": {
+      "title": "Hello world!"
+    }
+  },
+  "components": {}
+}

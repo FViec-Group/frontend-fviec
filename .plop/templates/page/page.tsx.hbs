@@ -1,3 +1,7 @@
+import { useTranslations } from 'next-intl';
+
 export default function {{pascalCase name}}Page() {
-  return <main>{{pascalCase name}}Page</main>;
+  const t = useTranslations('pages.{{pascalCase name}}');
+
+  return <main>{t('title')}</main>;
 }

@@ -1,15 +1,15 @@
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 import { NextIntlClientProvider } from 'next-intl';
-import {{pascalCase name}} from './{{pascalCase name}}';
+import Page from './page';
 
-describe('{{pascalCase name}}', () => {
+describe('Page', () => {
   const messages = require('./../../i18n/messages/en.json');
-  
-  it('should render a component', () => {
+
+  it('should render page component', () => {
     render(
       <NextIntlClientProvider messages={messages} locale="en">
-        <{{pascalCase name}} />
+        <Page />
       </NextIntlClientProvider>,
     );
   });

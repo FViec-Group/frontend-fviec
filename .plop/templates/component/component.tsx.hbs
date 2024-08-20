@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import styles from './{{pascalCase name}}.module.scss';
 import type { {{pascalCase name}}Props } from './{{pascalCase name}}.types';
 
 const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = () => {
-  return <div className={styles.root}>{{pascalCase name}}</div>;
+  const t = useTranslations('components.{{pascalCase name}}');
+  
+  return <div className={styles.root}>{t('title')}</div>;
 };
 
 export default {{pascalCase name}};
