@@ -1,9 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import { updateLocaleI18n } from './helpers';
 
 export default function PlopConfig(plop) {
   const rootDir = path.join('../');
-  const appDir = '../app';
+  const appDir = '../app/[locale]';
   const componentsDir = path.join(rootDir, '_components');
 
   plop.setGenerator('component', {
@@ -15,9 +16,9 @@ export default function PlopConfig(plop) {
         message: 'What is your component name?',
       },
     ],
-    actions: function () {
+    actions: function (data) {
       const indexFilePath = path.join(componentsDir, 'index.ts');
-
+      const { name } = data;
       const actions = [
         {
           type: 'add',
@@ -79,6 +80,9 @@ export default function PlopConfig(plop) {
         });
       }
 
+      // !NEED DISCUSSION: should we need to add prompts to ask title text default in i18n file json
+      updateLocaleI18n({ name, type: 'components' });
+
       return actions;
     },
   });
@@ -105,11 +109,19 @@ export default function PlopConfig(plop) {
     ],
     actions: function (data) {
       const { name, parent, isHomepage } = data;
-
       const dirName = isHomepage
         ? appDir
-        : path.join(appDir, parent?.replaceAll(' ', '-'), name.replaceAll(' ', '-'));
+        : path.join(
+            appDir,
+            parent?.toLowerCase().replaceAll(' ', '-'),
+            name.toLowerCase().replaceAll(' ', '-'),
+          );
 
+      // !NEED DISCUSSION: should we need to add prompts to ask title text default in i18n file json
+      updateLocaleI18n({
+        name: name,
+        type: 'pages',
+      });
       const pagePath = path.join(dirName, 'page.tsx');
       const testPagePath = path.join(dirName, 'page.test.tsx');
 

@@ -1,5 +1,8 @@
 {
-  "HomePage": {
-    "title": "Xin chào"
-  }
+  "pages": {
+    "Home": {
+      "title": "Xin chào"
+    }
+  },
+  "components": {}
 }
