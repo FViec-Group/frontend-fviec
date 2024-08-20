@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { updateLocaleI18n } from './helpers';
+import { updateLocaleI18n } from './helpers.mjs';
 
 export default function PlopConfig(plop) {
   const rootDir = path.join('../');
