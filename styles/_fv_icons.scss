@@ -1,0 +1,27 @@
+$FViecIcons-1be5a983-9f67-440f-8dba-991ac4a0ea70-font: "FViecIcons-1be5a983-9f67-440f-8dba-991ac4a0ea70";
+
+@font-face {
+    font-family: $FViecIcons-1be5a983-9f67-440f-8dba-991ac4a0ea70-font;
+    src: url("/icons/fonts/FViecIcons-1be5a983-9f67-440f-8dba-991ac4a0ea70.eot?eac854c3391a8b5c6d762be415659fe4#iefix") format("embedded-opentype"),
+url("/icons/fonts/FViecIcons-1be5a983-9f67-440f-8dba-991ac4a0ea70.woff2?eac854c3391a8b5c6d762be415659fe4") format("woff2"),
+url("/icons/fonts/FViecIcons-1be5a983-9f67-440f-8dba-991ac4a0ea70.woff?eac854c3391a8b5c6d762be415659fe4") format("woff");
+}
+
+i[class^="fv-"]:before, i[class*=" fv-"]:before {
+    font-family: FViecIcons-1be5a983-9f67-440f-8dba-991ac4a0ea70 !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$FViecIcons-1be5a983-9f67-440f-8dba-991ac4a0ea70-map: (
+    "eye": "\f101",
+);
+
+.fv-eye:before {
+    content: map-get($FViecIcons-1be5a983-9f67-440f-8dba-991ac4a0ea70-map, "eye");
+}

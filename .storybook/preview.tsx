@@ -2,6 +2,8 @@ import type { Preview } from '@storybook/react';
 import { NextIntlClientProvider } from 'next-intl';
 import React from 'react';
 import messagesEn from './../i18n/messages/en.json';
+import './../styles/global.scss';
+
 const preview: Preview = {
   parameters: {
     controls: {
