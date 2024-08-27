@@ -13,7 +13,7 @@
     "generate": "plop --plopfile ./.plop/plopfile.mjs",
     "generate:component": "plop component --plopfile ./.plop/plopfile.mjs",
     "generate:page": "plop page --plopfile ./.plop/plopfile.mjs",
-    "build-icons": "rm -f public/icons/fonts/* && fantasticon"
+    "font": "csvg-to-font -c svgtofont"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^14.2.5",
@@ -25,6 +25,7 @@
     "next-intl": "^3.17.3",
     "react": "^18",
     "react-dom": "^18",
+    "svgtofont": "^5.0.3",
     "tailwind-merge": "^2.5.0"
   },
   "devDependencies": {
@@ -49,6 +50,7 @@
     "@types/react": "18.3.3",
     "@types/react-dom": "^18",
     "commitizen": "^4.3.0",
+    "csvg-to-font": "^1.0.20",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.5",
