@@ -8,7 +8,7 @@ Top platform connect employers - jobseekers
 
 - Clone repository: `git clone git@github.com:FViec-Group/frontend-fviec.git`
 - Run two bash files in `/scripts` directory. Make sure after run these files. From root folder, you should have `<root_dir>/.vscode` and `<root_dir>/.env.local`
-- Install packages: `npm run install`
+- Install packages: `npm install`
 - Starting to development: `npm run dev`
 
 ## How can I commit as a contributor?
