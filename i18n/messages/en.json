@@ -1,5 +1,10 @@
 {
-  "common": {},
+  "common": {
+    "language": {
+      "english": "English",
+      "vietnamese": "Vietnamese"
+    }
+  },
   "pages": {
     "Home": {
       "title": "Home | FViec Group",

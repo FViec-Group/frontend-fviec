@@ -17,10 +17,10 @@ const ComingSoonSection: React.FC<ComingSoonSectionProps> = () => {
 
         <div className="flex justify-center gap-4">
           <Link href="/en" locale="en">
-            Tiếng Anh
+            {t('common.language.english')}
           </Link>
           <Link href="/vi" locale="vi">
-            Tiếng Việt
+            {t('common.language.vietnamese')}
           </Link>
         </div>
       </div>
