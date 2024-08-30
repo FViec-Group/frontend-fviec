@@ -6,5 +6,10 @@
       "description": "Top platforms for hiring professionals in various fields"
     }
   },
-  "components": {}
+  "components": {
+    "ComingSoonSection": {
+      "heading": "Website is under development",
+      "description": "We will release the first version soon in the near future"
+    }
+  }
 }
