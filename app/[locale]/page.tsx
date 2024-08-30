@@ -1,7 +1,9 @@
-import { useTranslations } from 'next-intl';
+import { ComingSoonSection } from '@/_components';
 
 export default function Home() {
-  const t = useTranslations('pages.Home');
-
-  return <main>{t('title')}</main>;
+  return (
+    <main>
+      <ComingSoonSection />
+    </main>
+  );
 }

@@ -1,9 +1,20 @@
 {
-  "common": {},
-  "pages": {
-    "Home": {
-      "title": "Hello world!"
+  "common": {
+    "language": {
+      "english": "English",
+      "vietnamese": "Vietnamese"
     }
   },
-  "components": {}
+  "pages": {
+    "Home": {
+      "title": "Home | FViec Group",
+      "description": "Top platforms for hiring professionals in various fields"
+    }
+  },
+  "components": {
+    "ComingSoonSection": {
+      "heading": "Website is under development",
+      "description": "We will release the first version soon in the near future"
+    }
+  }
 }

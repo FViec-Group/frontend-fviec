@@ -1,9 +1,20 @@
 {
-  "common": {},
-  "pages": {
-    "Home": {
-      "title": "Xin chào"
+  "common": {
+    "language": {
+      "english": "Tiếng Anh",
+      "vietnamese": "Tiếng Việt"
     }
   },
-  "components": {}
+  "pages": {
+    "Home": {
+      "title": "Trang chủ | FViec Group",
+      "description": "Nền tảng tìm việc hàng đầu"
+    }
+  },
+  "components": {
+    "ComingSoonSection": {
+      "heading": "Website đang được phát triển",
+      "description": "Chúng tôi sẽ sớm phát hành phiên bản đầu tiên trong thời gian tới"
+    }
+  }
 }
