@@ -2,7 +2,8 @@
   "common": {},
   "pages": {
     "Home": {
-      "title": "Xin chào"
+      "title": "Trang chủ | FViec Group",
+      "description": "Nền tảng tìm việc hàng đầu"
     }
   },
   "components": {}

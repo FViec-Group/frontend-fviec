@@ -2,7 +2,8 @@
   "common": {},
   "pages": {
     "Home": {
-      "title": "Hello world!"
+      "title": "Home | FViec Group",
+      "description": "Top platforms for hiring professionals in various fields"
     }
   },
   "components": {}
