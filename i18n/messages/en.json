@@ -15,12 +15,6 @@
     "ComingSoonSection": {
       "heading": "Website is under development",
       "description": "We will release the first version soon in the near future"
-    },
-    "ClientQuery": {
-      "title": "ClientQuery"
-    },
-    "ServerQuery": {
-      "title": "ServerQuery"
     }
   }
 }
