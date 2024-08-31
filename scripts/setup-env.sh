@@ -9,6 +9,7 @@ if [ -f "$ROOT_DIR/.env.local" ]; then
 else
   cat <<EOL > "$ROOT_DIR/.env.local"
 ANALYZE=false
+NEXT_PUBLIC_GRAPHQL_ENDPOINT=
 EOL
 
   if [ -f "$ROOT_DIR/.env.local" ]; then
