@@ -6,7 +6,7 @@ import type { {{pascalCase name}}Props } from './{{pascalCase name}}.types';
 const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = () => {
   const t = useTranslations('components.{{pascalCase name}}');
   
-  return <div className={styles.root}>{t('title')}</div>;
+  return <div className={styles.{{pascalCase name}} }>{t('title')}</div>;
 };
 
 export default {{pascalCase name}};
