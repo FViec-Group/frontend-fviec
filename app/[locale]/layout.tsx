@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import React from 'react';
+import { ApolloWrapper } from '../apollo/apollo-wrapper';
 import { fonts } from '../font';
 
 type Props = {
@@ -34,7 +35,9 @@ export default async function LocaleLayout(props: Props) {
   return (
     <html lang={locale}>
       <body className={fonts.roboto.className}>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ApolloWrapper>{children}</ApolloWrapper>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

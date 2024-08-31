@@ -14,10 +14,13 @@
     "build-icons": "csvg-to-font -c svgtofont"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.5",
+    "@apollo/experimental-nextjs-app-support": "^0.11.2",
     "@next/bundle-analyzer": "^14.2.5",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
+    "graphql": "^16.9.0",
     "next": "14.2.5",
     "next-intl": "^3.17.3",
     "react": "^18",
