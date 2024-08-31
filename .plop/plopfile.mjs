@@ -54,14 +54,6 @@ export default function PlopConfig(plop) {
           ),
           templateFile: path.join('templates/component/types.tsx.hbs'),
         },
-        {
-          type: 'add',
-          path: path.join(
-            componentsDir,
-            '{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-          ),
-          templateFile: path.join('templates/component/stories.tsx.hbs'),
-        },
       ];
       if (fs.existsSync('_components/index.ts')) {
         actions.push({
