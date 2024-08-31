@@ -11,7 +11,7 @@
     "generate": "plop --plopfile ./.plop/plopfile.mjs",
     "generate:component": "plop component --plopfile ./.plop/plopfile.mjs",
     "generate:page": "plop page --plopfile ./.plop/plopfile.mjs",
-    "font": "csvg-to-font -c svgtofont"
+    "build-icons": "csvg-to-font -c svgtofont"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^14.2.5",
